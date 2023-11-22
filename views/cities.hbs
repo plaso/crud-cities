@@ -1,0 +1,10 @@
+<h1>Cities</h1>
+
+{{!-- Listado de ciudades --}}
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  {{#each cities as |city|}}
+    <div class="col">
+      {{> card city=city}}
+    </div>
+  {{/each}}
+</div>

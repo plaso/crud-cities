@@ -1,0 +1,14 @@
+<div class="row row-cols-1 row-cols-md-2 g-4 mt-1">
+  <div class="col">
+    <img class="img-fluid" src="{{city.image}}" alt="">
+  </div>
+  <div class="col">
+    <h1>{{city.name}}</h1>
+    {{> detailItem name="Country" value=city.country}}
+    {{> detailItem name="Population" value=city.population}}
+    {{> detailItem name="Foundation" value=city.foundationYear}}
+  </div>
+</div>
+
+<a class="btn btn-primary mt-4" href="/cities">Go back to cities</a>
+
